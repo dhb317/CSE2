@@ -23,11 +23,11 @@ public class Cyclometer {
      PI=3.14159, //The numerical value of PI
      feetPerMile=5280, //Number of feets in a mile used to calculate in the program
      inchesPerFoot=12, //number of inches in a foot used to calcuate in the program
-     secondsPerMinute=60, //Number of seconds in a minute used to caulucate the time in the program
+     secondsPerMinute=60; //Number of seconds in a minute used to caulucate the time in the program
      double distanceTrip1, distanceTrip2,totaldistance; // measurement of total distance
 
-     System.out.println("Trip 1 took"+(secsTrip1/secondsPerMinute)+" minutes and had "+ countsTrip1+" counts.");  
-     System.out.println("Trip 2 took"+(secsTrip2/secondsPerMinute)+" minutes and had "+ countsTrip2+" counts.");
+     System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute)+" minutes and had "+ countsTrip1+" counts.");  
+     System.out.println("Trip 2 took "+ (secsTrip2/secondsPerMinute)+" minutes and had "+ countsTrip2+" counts.");
 
 // run the calculations; store the values
 
@@ -37,7 +37,7 @@ public class Cyclometer {
      distanceTrip1/=inchesPerFoot*feetPerMile;
 // Gives distance in miles
      distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile;
-     
+     totaldistance=distanceTrip1+distanceTrip2; //The total distance
 // Print out the output data
      System.out.println("Trip 1 was "+distanceTrip1+" miles");
      System.out.println("Trip 2 was "+distanceTrip2+" miles");
