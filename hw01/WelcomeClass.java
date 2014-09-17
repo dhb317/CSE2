@@ -2,11 +2,7 @@
 //Dhruv Bajoria CSE-002
 //Homework 01 09/02/2014
 //Welcome Class Java Program
-//
-//  first compile the program
-//   javac WelcomeClass.Java
-//  run the program
-//   java WelcomeClass//
+
 //  
 //  deinfe the class
 public class WelcomeClass{
